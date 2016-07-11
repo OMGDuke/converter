@@ -20,15 +20,15 @@ describe("Color Code Converter", function() {
   describe("Hex to RGB conversion", function() {
     it("converts red to rgb", function() {
       var redRgb = converter.hexToRgb("ff0000");
-      expect(redHex).to.deep.equal([255,0,0]);
+      expect(redRgb).to.deep.equal([255,0,0]);
     });
     it("converts green to rgb", function() {
       var greenRgb = converter.hexToRgb("00ff00");
-      expect(greenHex).to.deep.equal([0,255,0]);
+      expect(greenRgb).to.deep.equal([0,255,0]);
     });
     it("converts blue to rgb", function() {
       var blueRgb = converter.hexToRgb("0000ff");
-      expect(blueHex).to.deep.equal([0,0,255]);
+      expect(blueRgb).to.deep.equal([0,0,255]);
     });
   });
 });
